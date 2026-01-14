@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "neu";
+  src: url("../font/NeueHaasDisplayRoman.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes anime {
+  from {
+    
+    transform: translate(-10%, -50%);
+  }
+  to {
+    transform: translate(10, 3%);
+  }
+}
+
+@keyframes animepage {
+  from {
+    
+    transform: translate(10%, -10%) skew(0);
+  }
+  to {
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+
+@keyframes anime1 {
+    from {
+        
+        transform: translate(-20%, -25%);
+    }
+    to {
+        transform: translate(-20%, -20%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(-15%, -25%);
+    }
+    to {
+        transform: translate(-15%, -15%);
+    }
+}
+
+@keyframes anime3 {
+    from {
+        transform: translate(10%, -15%);
+    }
+    to {
+        transform: translate(10%, -15%);
+    }
+}
+
+@layer utilities {
+  @keyframes movedot {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-movedot {
+    animation: movedot 12s linear infinite;
+  }
+}
+
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
