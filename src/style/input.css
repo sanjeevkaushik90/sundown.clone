@@ -81,3 +81,27 @@
     display: none;
   }
 }
+
+
+
+@keyframes glowanim{
+  from {
+    
+    transform: translate(-10%, 10%) skew(0);
+  }
+  to {
+    transform: translate(-10%, 10%) skew(-10deg);
+  }
+}
+
+.swiper-slide { width: 30%; }
+.swiper-slide:nth-child(2n) { width: 30%; }
+.swiper-slide:nth-child(3n) { width: 30%; }
+
+
+
+.swiper-slide {
+  flex-shrink: 0;
+  position: relative;
+  display: block; 
+}

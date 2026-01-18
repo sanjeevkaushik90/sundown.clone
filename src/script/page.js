@@ -5,7 +5,8 @@
 
 
 
-var image = document.querySelector("#imageContainer")
+function pageCard(){
+    var image = document.querySelector("#imageContainer")
 var fixed = document.querySelector("#fixedImage")
 image.addEventListener("mouseenter", function () {
     fixed.style.display = "block"
@@ -23,3 +24,20 @@ imageCards.forEach(function (card) {
         fixed.style.backgroundImage = `url(${imageNew})`
     })
 })
+}
+
+
+function swiperAnimation(){
+     var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+}
+
+
+pageCard()
+swiperAnimation()
