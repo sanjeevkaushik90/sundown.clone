@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-black">
-    <div id="main" class=" relative">
+    <div id="main" class="z-10 relative">
 
 
         <div class="w-full ">
@@ -391,22 +391,12 @@
                     </div>
 
 
-
-
-
                 </div>
             </div>
+
+
 
             <!-- page 4 -->
-            <div class="bg-[#EFEAE3] min-h-screen w-full pt-60 pl-2 pr-2">
-                <div class="flex justify-center items-center">
-                    <div class="bg-black h-300 w-450 rounded-4xl ">
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- page 5 -->
 
             <div class="bg-[#EFEAE3] w-full min-h-screen pt-40  pl-30 cursor-grabbing">
 
@@ -550,43 +540,82 @@
                 </div>
             </div>
 
-            <!-- page 6 -->
+            <!-- page 5 -->
 
-            <div class="bg-black w-full h-screen">
-                <div class=" text-[#EFEAE3]">
+            <div class="relative bg-black w-full min-h-screen overflow-hidden">
+
+                <!-- GLOW LAYER (BEHIND CONTENT) -->
+                <div class="absolute inset-0 -z-10 pointer-events-none">
+
+                    <!-- left glow -->
+                    <div class="absolute
+             bg-[#E63F36]/90
+             w-[60vw] h-[35vw]
+             rounded-full
+             blur-[220px]
+             left-[-15%]
+             bottom-[-20%]">
+                    </div>
+
+                    <!-- right glow -->
+                    <div class="absolute
+             bg-[#E63936]/90
+             w-[75vw] h-[45vw]
+             rounded-full
+             blur-[260px]
+             right-[-20%]
+             bottom-[-30%]">
+                    </div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="relative text-[#EFEAE3] py-28">
+
                     <!-- top -->
-                    <div class="flex  justify-between pl-30 pr-40 pt-40">
-                        <!-- left -->
+                    <div class="flex justify-between pl-30 pr-40 pt-40">
                         <div class="text-5xl flex flex-col gap-3 font-semibold">
                             <h1>Work</h1>
                             <h1>Studio</h1>
                             <h1>Contact</h1>
                         </div>
 
-                        <!-- right -->
                         <div class="flex flex-col gap-15">
-                            <p class="text-2xl">Get industry insights and creative <br>
-                                inspiration straight to your inbox.</p>
-
-                                <h1 class="text-2xl border-b-4 border-[#444141bd]">Email Address</h1>
+                            <p class="text-2xl">
+                                Get industry insights and creative <br>
+                                inspiration straight to your inbox.
+                            </p>
+                            <h1 class="text-2xl border-b-4 border-[#444141bd]">
+                                Email Address
+                            </h1>
                         </div>
                     </div>
 
-                    <!-- down -->
-                    <div class="flex items-end justify-center h-screen ">
-                        <h1 class="text-[375px] font-extrabold ">SUNDOWN</h1>
-                    </div>
-                    
+                    <!-- bottom -->
+                    <div class="flex flex-col px-10 justify-end h-screen leading-none">
+                        <div class="border-b-4">
+                            <h1 class="text-[375px] font-extrabold">SUNDOWN</h1>
+                        </div>
 
+                        <div class="flex justify-between py-2">
+                            <h5>Copyright © Sundown Studio</h5>
+                            <h5>Brooklyn, NY</h5>
+                            <h5>Instagram</h5>
+                            <h5>LinkedIn</h5>
+                        </div>
                     </div>
+
                 </div>
-
             </div>
 
         </div>
 
+    </div>
+
 
     </div>
+
+
 
 
 
